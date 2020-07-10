@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem "aasm"
+gem "braintree"
 
 gem 'rails', '~> 5.0.1'
 gem 'sqlite3'
