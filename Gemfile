@@ -10,11 +10,8 @@ gem "braintree"
 
 gem 'rails', '~> 5.0.1'
 gem 'sqlite3'
-<<<<<<< HEAD
-gem 'puma'
-=======
 gem 'puma', '~> 3.7'
->>>>>>> using_cart
+
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
