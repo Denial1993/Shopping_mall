@@ -5,9 +5,16 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem "aasm"
+gem "braintree"
+
 gem 'rails', '~> 5.0.1'
 gem 'sqlite3'
+<<<<<<< HEAD
 gem 'puma'
+=======
+gem 'puma', '~> 3.7'
+>>>>>>> using_cart
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
@@ -24,6 +31,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'bootstrap-sass'
+gem 'simple_form'
 
 group :development, :test do
   gem 'byebug', platform: :mri

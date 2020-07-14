@@ -1,4 +1,7 @@
 class Cart
+  SessionKey = :cart9487
+  #之後要取用的時候只要寫成 session[Cart::SessionKey] 即可，若之後有要改 key 的值，也只要改這個地方就行了。
+  
   attr_reader :items
 
   def initialize(items = [])

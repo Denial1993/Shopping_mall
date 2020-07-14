@@ -1,0 +1,37 @@
+<!-- 購物車三後我自己加的頁面(怕爆~~) -->
+<!-- 購物車三後我自己加的頁面(怕爆~~) -->
+<!-- 購物車三後我自己加的頁面(怕爆~~) -->
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @product.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<%= link_to 'Back', products_path, class:'btn btn-default' %>
+<hr />
+
+<%= form_for(@product, url: checkout_product_path(@product), method: :post) do |f| %>
+  <div id="payment-form"></div>
+  <%= f.submit "確認付款", class:"btn btn-default btn-danger" %>
+<% end %>
+
+<script src="https://js.braintreegateway.com/js/braintree-2.30.0.min.js"></script>
+<script>
+var clientToken = "<%= @client_token %>";
+
+braintree.setup(clientToken, "dropin", {
+  container: "payment-form"
+});
+</script>
