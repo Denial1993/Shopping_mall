@@ -31,9 +31,7 @@ group :development, :test do
 end
 
 group :production do
-    #gem 'pg'
-    gem "postgresql"
-    gem 'rails_12factor'    
+    gem 'pg'
 end
 
 
