@@ -10,8 +10,22 @@
 
   <body>
     <div class="container">
-      <%= notice %>
-      <%= yield %>
+      <p><%= notice %></p>
+
+      <p><%= yield %></p>
+      <p><%= alert %></p>
+    
+    <nav>
+       <% unless user_signed_in? %>
+        <%= link_to "註冊", new_user_registration_path %>
+        <%= link_to "登入", new_user_session_path %>  
+       <% end %> 
+
+      <% if user_signed_in? %>
+        <%= link_to "登出", destroy_user_session_path, method: :delete %>
+      <% end %>
+    </nav>
+    
     </div>
   </body>
 </html>

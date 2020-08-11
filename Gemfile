@@ -7,6 +7,7 @@ end
 
 gem "aasm"
 gem "braintree"
+gem "devise"
 
 gem 'rails', '~> 5.0.1'
 gem 'puma', '~> 3.7'
