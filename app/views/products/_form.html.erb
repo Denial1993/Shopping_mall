@@ -1,6 +1,9 @@
 <%= simple_form_for product do |f| %>
   <%= f.input :title, placeholder: "商品名稱" %>
   <%= f.input :description, placeholder: "說明" %>
+  <%= f.input :category,placeholder: "類別" %>
+  <%= f.input :stock,placeholder: "庫存"%>
+  <%= f.input :suggested_price,placeholder: "建議售價" %>
   <%= f.input :price, placeholder: "售價" %>
   <%= f.submit class: "btn btn-default btn-primary" %>
 <% end %>

@@ -17,3 +17,4 @@ Rails.application.routes.draw do
 end
 
 #進度: 完成了 devise 但不知道怎完成的 哈哈哈....QQ
+
